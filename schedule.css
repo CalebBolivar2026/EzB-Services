@@ -1,0 +1,183 @@
+/* =========================================
+   SCHEDULE PAGE TWO-COLUMN & COMPACT FORM
+   ========================================= */
+
+.schedule-section {
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+    min-height: calc(100vh - 80px);
+}
+
+.schedule-page-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    gap: 40px;
+    align-items: stretch;
+    padding: 0 20px;
+}
+
+/* Left Info Card */
+.schedule-info {
+    flex: 1;
+    background-color: #ffffff;
+    border: 1px solid #eaeaea;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.04);
+}
+
+.schedule-info h2 {
+    font-size: 32px;
+    font-weight: 800;
+    color: #1a1a1a;
+    margin-bottom: 15px;
+    line-height: 1.2;
+}
+
+.schedule-info > p {
+    font-size: 15px;
+    color: #555555;
+    line-height: 1.6;
+    margin-bottom: 35px;
+}
+
+.schedule-info .info-item {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 25px;
+    align-items: flex-start;
+}
+
+.schedule-info .info-icon {
+    font-size: 22px;
+    background: #fdf6e9;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+.schedule-info .info-item h4 {
+    margin: 0 0 5px 0;
+    font-size: 16px;
+    color: #1a1a1a;
+}
+
+.schedule-info .info-item p {
+    margin: 0;
+    font-size: 14px;
+    color: #555555;
+}
+
+.schedule-info .info-item a {
+    color: #f39c12;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* Right Form Box */
+.schedule-form-box {
+    flex: 1.2;
+    background-color: #ffffff;
+    border: 1px solid #eaeaea;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.04);
+}
+
+/* Compact Two-Column Form Grid */
+.schedule-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px 20px;
+}
+
+.schedule-form h3 {
+    grid-column: span 2;
+    font-size: 24px;
+    font-weight: 800;
+    color: #1a1a1a;
+    margin-bottom: 5px;
+}
+
+.schedule-form .form-group {
+    margin-bottom: 0;
+}
+
+.schedule-form .form-group.full-width {
+    grid-column: span 2;
+}
+
+.schedule-form label {
+    display: block;
+    font-size: 13px;
+    font-weight: 600;
+    color: #333333;
+    margin-bottom: 6px;
+}
+
+.schedule-form input[type="text"],
+.schedule-form input[type="email"],
+.schedule-form input[type="tel"],
+.schedule-form input[type="date"],
+.schedule-form select,
+.schedule-form textarea {
+    width: 100%;
+    padding: 10px 14px;
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+    font-size: 14px;
+    font-family: inherit;
+    background-color: #ffffff;
+    color: #1a1a1a;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.schedule-form input:focus,
+.schedule-form select:focus,
+.schedule-form textarea:focus {
+    outline: none;
+    border-color: #f39c12;
+    box-shadow: 0 0 0 3px rgba(243, 156, 18, 0.15);
+}
+
+.schedule-form textarea {
+    resize: vertical;
+}
+
+.schedule-form .btn-submit {
+    grid-column: span 2;
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: #f39c12;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 700;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    margin-top: 5px;
+}
+
+.schedule-form .btn-submit:hover {
+    background-color: #e67e22;
+}
+
+/* Responsive adjustment for mobile screens */
+@media (max-width: 900px) {
+    .schedule-page-container {
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .schedule-form {
+        grid-template-columns: 1fr;
+    }
+
+    .schedule-form h3,
+    .schedule-form .form-group.full-width,
+    .schedule-form .btn-submit {
+        grid-column: span 1;
+    }
+}
