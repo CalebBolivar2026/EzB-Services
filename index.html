@@ -7,6 +7,14 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
+    <!-- TEMPORARY CONSTRUCTION BANNER -->
+<div id="construction-banner" style="background-color: rgba(243, 156, 18, 0.65); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); color: #ffffff; text-align: center; padding: 10px 20px; font-weight: 600; font-size: 14px; position: fixed; top: 0; left: 0; width: 100%; z-index: 9999; display: flex; justify-content: center; align-items: center; gap: 15px; border-bottom: 1px solid rgba(255, 255, 255, 0.2);">
+    <span>🚧 EzB Services is currently under construction. Some features are being finalized!</span>
+    <button onclick="document.getElementById('construction-banner').style.display='none';" style="background: rgba(0,0,0,0.3); border: none; color: white; padding: 3px 8px; border-radius: 4px; cursor: pointer; font-size: 12px;">Dismiss</button>
+</div>
+
+    
    <header class="navbar">
     <div class="logo">EzB <span>Services</span></div>
     <div class="hamburger" id="hamburger">
